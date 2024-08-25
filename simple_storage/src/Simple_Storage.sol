@@ -5,7 +5,7 @@ contract SimpleStorage{
     function favNo(uint256 _favNo) public{
         favouriteNumber=_favNo;
     }
-    function viewFavNo() publc view returns(uint256){
+    function viewFavNo() public view returns(uint256){
         return favouriteNumber;
     }
 }
