@@ -1,2 +1,2 @@
 # Soliditiy_learning
-learning solidity from 0 to 100
+1. simple storage- just storing a number on the blockchain and retriving that number => public functions
