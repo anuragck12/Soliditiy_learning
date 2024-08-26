@@ -5,7 +5,7 @@ contract SimpleStorage{
     //     string namePerson;
     //     uint256 favouriteNumber;
     // }
-    mapping (string => uint) nameToFav;
+    mapping (string => uint) public nameToFav;
 
     function favNo(uint256 _favNo,string calldata _name) public{
        nameToFav[_name]=_favNo;
