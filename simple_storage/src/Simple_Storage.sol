@@ -20,4 +20,8 @@ contract SimpleStorage{
     function retrive() public view returns(uint256){
         return favouriteNo;
     }
+ //for using pure we can't read the variables inside the contract and ofcourse we can't modify them eg
+function pureFn() public pure returns (uint256){
+   return 7;
+}
 }
