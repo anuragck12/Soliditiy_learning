@@ -8,3 +8,16 @@ anvil
 then create an another bash ,then type this command
 forge create "contract name" --rpc-url <url> --interactive
 --interactive for typing privatekey on compilation
+
+
+above this for normal compilation
+we can deploy through the script
+we need to include script file in the folder script
+command 
+forge script "path_to_script" --rpc-url <url> --private-key <key> --broadcast
+if we remove broadcast then we can get the simulation for the transaction
+if we use .env
+then first type
+source .env
+for loading the .env contents
+
