@@ -5,6 +5,9 @@ out/
 # Ignores development broadcast logs
 !/broadcast
 /broadcast/*/31337/
+/broadcast/*/11155111/
+/broadcast/*/11155111/run-1725125825.json
+/broadcast/*/11155111/run-latest.json
 /broadcast/**/dry-run/
 
 # Docs
@@ -12,3 +15,4 @@ docs/
 
 # Dotenv file
 .env
+

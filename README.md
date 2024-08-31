@@ -21,3 +21,9 @@ then first type
 source .env
 for loading the .env contents
 
+interacting with contract from cli
+for modifying on the blockchain
+cast send <contract_address> "function_signature" parameter --rpc-url <rpc_url> --private-key <private_key>
+
+for reading from the blockchain
+cast call <contract_address> "function_signature" parameter --rpc-url <rpc-url>
