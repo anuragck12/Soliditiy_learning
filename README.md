@@ -27,3 +27,5 @@ cast send <contract_address> "function_signature" parameter --rpc-url <rpc_url> 
 
 for reading from the blockchain
 cast call <contract_address> "function_signature" parameter --rpc-url <rpc-url>
+
+Need to include contract call
