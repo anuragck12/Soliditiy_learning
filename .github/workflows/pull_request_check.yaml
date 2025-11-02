@@ -1,0 +1,21 @@
+name: Branch Name Check
+
+on:
+  pull_request:
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check branch name
+        run: |
+          BRANCH_NAME="${GITHUB_HEAD_REF}"
+          echo "Checking branch name: $BRANCH_NAME"
+
+          if [[ ! "$BRANCH_NAME" =~ ^(feat|fix|chore|refactor|docs|test)/.*$ ]]; then
+            echo "❌ Invalid branch name: '$BRANCH_NAME'"
+            echo "Branch names must start with one of: feat/, fix/, chore/, refactor/, docs/, test/"
+            exit 1
+          fi
+
+          echo "✅ Branch name is valid: $BRANCH_NAME"
